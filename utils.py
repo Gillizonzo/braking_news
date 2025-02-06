@@ -13,5 +13,8 @@ def get_content(url):
     return res
 
 def format_newsapi_sources_str(sources_list):
-    res = sources_list.join(",")
+    return sources_list.join(",")
+
+def get_nanoid_from_filename(filename):
+    return filename.split("/")[-1].split(".")[0]
     
